@@ -1,6 +1,6 @@
 # Jocelyn
 
-Jocelyn is shim that makes it easier to use the Processing_ core
+Jocelyn is shim that makes it easier to use the Processing core
 libraries from Jython.
 
 ![](https://github.com/d0c0nnor/jocelyn/raw/master/docs/images/lots_of_circles.png)

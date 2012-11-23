@@ -69,7 +69,7 @@ Run the sketch like so::
 At this point, if everything is installed correctly, you should see a
 blank box with window controls that looks something like
 
-.. image:: images/blank.png
+.. image:: https://github.com/d0c0nnor/jocelyn/raw/master/docs/images/blank.png
 
 
 Drawing Simple 2D Shapes
@@ -115,7 +115,7 @@ on a black background::
 
 You should something that looks like:
 
-.. image:: images/one_circle.png
+.. image:: https://github.com/d0c0nnor/jocelyn/raw/master/docs/images/one_circle.png
 
 
 Interactivity
@@ -157,7 +157,7 @@ is invoked.
 
 Run the sketch as before and click around to make some art!
 
-.. image:: images/lots_of_circles.png
+.. image:: https://github.com/d0c0nnor/jocelyn/raw/master/docs/images/lots_of_circles.png
 
 
 Creating Static Images
@@ -225,22 +225,6 @@ If you would prefer to run CPython ( and don't mind not running the
 Processing libraries themselves ) there is also a package called
 `pyprocessing <http://code.google.com/p/pyprocessing>`_ that implements
 the Processing language using OpenGL and Piglet.
-
-.. _api:
-
-API reference
-=============
-
-The important modules of the jocelyn module are:
-
-.. autoclass:: Sketch
-   :members:
-
-.. autoclass:: SketchedImage
-   :members:
-
-.. autofunction:: Q
-
 
 Changelog
 =========

@@ -1,15 +1,24 @@
-from setuptools import setup, find_packages
-import glob, os
+from distutils.core import setup
 
-jars = glob.glob("lib" + os.sep +"*.jar")
+DESC="""
+
+"""
 
 setup(
     name="jocelyn",
     version="0.1.0",
-    url="",
+    url="https://github.com/d0c0nnor/jocelyn",
     author="Danny O'Connor",
-    packages=find_packages('src'),
-    package_dir={"":"src"},
-    package_data={'jyprocessing': ['java_libs/*']},
-)
+    author_email="dannyoc@gmail.com",
 
+    packages=['jocelyn',
+              'jocelyn.examples',
+              'jocelyn.examples.library_example'],
+
+    package_dir = {'':'src'},
+
+    package_data = {
+        '': ['*.txt'],
+        'jocelyn': ['java_libs/*.jar'],
+    }
+)

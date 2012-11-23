@@ -87,7 +87,7 @@ invoked anywhere in your module.
 To access variables of the sketch ( like ``mouseX``, ``width`` and
 ``height`` ) jocelyn provides the ``Q`` method.
 
-Let's update the Sketch to create something simple like a white circle
+Let's update the ``Sketch`` to create something simple like a white circle
 on a black background::
 
     from jocelyn import *
@@ -121,8 +121,8 @@ You should something that looks like:
 Interactivity
 -------------
 
-The Sketch class is a subclass of ``PApplet`` so to implement Processing
-methods like ``mousePressed`` we add them as methods on the Sketch class.
+The ``Sketch`` class is a subclass of ``PApplet`` so to implement Processing
+methods like ``mousePressed`` we add them as methods on the ``Sketch`` class.
 
 So, make our sketch slightly more interesting, lets make it so we draw a
 random circle on each mouse-press::

@@ -27,6 +27,10 @@ install into that like so::
 It's also possible to install the package from the `source code on github
 <https://github.com/d0c0nnor/jocelyn>`_.
 
+To test that it's installed correctly run::
+
+    $ jython -m jocelyn.examples.tree
+
 Tutorial
 ========
 

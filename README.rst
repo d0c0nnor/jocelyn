@@ -58,7 +58,7 @@ library and create a sublclass of :class:`Sketch` like so::
     if __name__ == '__main__':
         CircleSketch().run_sketch()
 
-Open a terminal and activate the virtualenv in which you have jocelyn installed, for example::
+Open a terminal and activate the virtualenv in which you have Jocelyn installed, for example::
 
     $ source ~/.virtualenvs/jocelyn/bin/activate
 
@@ -75,19 +75,19 @@ blank box with window controls that looks something like
 Drawing Simple 2D Shapes
 ------------------------
 
-Jocelyn works by assigning the current sketch to a thread local variable
-and creating delegates for the declared methods on PApplet using Java
-reflection.
+Jocelyn works by assigning the current ``Sketch`` object to a thread
+local variable and creating delegates for the declared methods on
+``PApplet`` using Java reflection.
 
 In essence what this means is that you can translate Processing code
-fairly easily into jocelyn code. All of the methods in the Processing
-language ( like ``line``, ``ellipse`` etc. ) can be imported from jocelyn and
+fairly easily into Jocelyn code. All of the methods in the Processing
+language ( like ``line``, ``ellipse`` etc. ) can be imported from Jocelyn and
 invoked anywhere in your module.
 
 To access variables of the sketch ( like ``mouseX``, ``width`` and
-``height`` ) jocelyn provides the ``Q`` method.
+``height`` ) Jocelyn provides the ``Q`` method.
 
-Let's update the ``Sketch`` to create something simple like a white circle
+Let's update the sketch to create something simple like a white circle
 on a black background::
 
     from jocelyn import *
@@ -124,8 +124,8 @@ Interactivity
 The ``Sketch`` class is a subclass of ``PApplet`` so to implement Processing
 methods like ``mousePressed`` we add them as methods on the ``Sketch`` class.
 
-So, make our sketch slightly more interesting, lets make it so we draw a
-random circle on each mouse-press::
+So, to make our sketch slightly more interesting, lets make it so we
+draw a random circle on each mouse-press::
 
     from jocelyn import *
 
@@ -163,7 +163,7 @@ Run the sketch as before and click around to make some art!
 Creating Static Images
 ----------------------
 
-To make it marginally simpler to create static images, jocelyn includes
+To make it marginally simpler to create static images, Jocelyn includes
 a specialization of the :class:`Sketch` class,
 :class:`SketchedImage`. Rather than creating a frame with window borders
 ( like the standard :class:`Sketch` ) :class:`SketchedImage` writes

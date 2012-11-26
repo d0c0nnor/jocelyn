@@ -20,7 +20,7 @@ Installation
 
 The recommended way to install Jocelyn is to `create a Jython virtual-env
 <http://www.jython.org/jythonbook/en/1.0/appendixA.html#virtualenv>`_ and
-install into that like so::
+install it using ``pip``::
 
     $ pip install jocelyn
 

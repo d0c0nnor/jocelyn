@@ -214,21 +214,30 @@ details.
 Rationale
 =========
 
-This library is designed for people with a Python background who want to
-play with Processing and who don't mind running Jython.
+This library is potentially suitable for people with a Python background
+who want to play with Processing and who don't mind running Jython.
 
 Soomebody more familiar with Processing than Python would probably be
 happier with `processing.py <https://github.com/jdf/processing.py>`_
-which is more faithful reconstruction of the Processing language.
+which is more faithful reconstruction of the Processing language and is
+easier to get started with for someone unfamiliar with with virtualenv
+and pip.
 
-This library differs from processing.py in that it's invoked using a
-standard Jython interpreter, it comes as a setup-tools enabled package
-and it doesn't modify built-ins.
+This main differences between this library and processing.py are that
+this libarary is completely written in Jython, is invoked using a
+standard Jython interpreter, comes as a setup-tools enabled package and
+doesn't modify built-ins.
+
+The most obvious disadvantage of this approach is that that you need to
+use the ``Q`` method to get at Sketch variables ( which are available to
+processing.py by setting them as built-ins before invoking the ``draw``
+method of your Sketch ).
 
 If you would prefer to run CPython ( and don't mind not running the
 Processing libraries themselves ) there is also a package called
 `pyprocessing <http://code.google.com/p/pyprocessing>`_ that implements
 the Processing language using OpenGL and Piglet.
+
 
 Changelog
 =========

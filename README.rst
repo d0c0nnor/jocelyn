@@ -10,7 +10,7 @@ Processing implementations see Rationale_.
 
 The library ships with a version of Processing that is automatically
 added to the classpath ( if not already there ) when the module is
-imported. The current version of Processing bundled is 1.5.0.
+imported. The current version of Processing bundled is 1.5.1.
 
 .. _Processing: http://processing.org
 

@@ -238,6 +238,13 @@ Processing libraries themselves ) there is also a package called
 `pyprocessing <http://code.google.com/p/pyprocessing>`_ that implements
 the Processing language using OpenGL and Piglet.
 
+Acknowledgements
+===============
+
+Heavily inspired by `processing.py
+<http://code.google.com/p/pyprocessing>`_ and `quill
+<https://github.com/quil/quil>`_.
+
 
 Changelog
 =========
